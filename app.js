@@ -47,14 +47,6 @@ $('.lang').on('click', function (e) {
     localStorage.setItem('langName', langName);
     $('.lang').addClass('inactive-lang');
     $('#' + langCode).removeClass('inactive-lang').addClass('selected-lang');
-    $('#chat div span').each(function (data) {
-      var textToTranslate = $(this).text();
-      // var newScript = document.createElement('script');
-      // newScript.type = 'text/javascript';
-      // var source = 'https://www.googleapis.com/language/translate/v2?key=AIzaSyCe7PGjTlO5cM-upDqti3FfSC14GHjOiBU&source=en&target=' + langCode + '&callback=translateText&q=' + textToTranslate;
-      // newScript.src = source;
-      // document.getElementsByTagName('head')[0].appendChild(newScript);
-    });
 });
 
 //Translation
