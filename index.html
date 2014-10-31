@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Translate API Example</title>
+    <script src="https://cdn.firebase.com/js/client/1.1.3/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div id="right">
+      <div id="authed"><img src="google.png" id="google"/></div>
+      <div id="languages">
+        Select your language
+        <p id="en" class="lang">English</p>
+        <p id="es" class="lang">Spanish</p>
+        <p id="fr" class="lang">French</p>
+        <p id="de" class="lang">German</p>
+      </div>
+    </div>
+    <input id="sourceText" type="text" placeholder="Message"/>
+<!--     <button id="en" class="lang">English</button>
+    <button id="es" class="lang">Spanish</button>
+    <button id="de" class="lang">German</button>
+    <button id="fr" class="lang">French</button> -->
+    <div id="chat"></div>
+
+    <div id="translation"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

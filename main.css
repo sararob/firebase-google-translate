@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Gotham Light';
+  src: url("/fonts/Gotham-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url("/fonts/Gotham-Bold.otf") format("opentype");
+}
+
+body {
+  font-family: 'Gotham Light';
+}
+
+#chat {
+  margin-top: 20px;
+}
+
+#google {
+  width: 220px;
+}
+
+#right {
+  float: right;
+}
+
+.selected-lang {
+  background-color: lightgrey;
+}
+
+.inactive-lang {
+  background-color: white;
+}
+
+#authed {
+  margin-bottom: 15px;
+  color: #F90101;
+}
+
+.lang {
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.message {
+  margin: 7px;
+}
+
+.user-pic {
+  width: 30px;
+/*  margin: 4px;*/
+  border-radius: 2px;
+}
+
+.msg-text {
+  margin-bottom: 3px;
+  display: inline-block;
+  margin-left: 4px;
+}
+
+input {
+    padding: 0.5em;
+    border: 1px solid #CCC;
+    font-family: 'Gotham Light';
+    font-weight: 300;
+    font-size: 14px;
+}

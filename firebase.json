@@ -1,0 +1,9 @@
+{
+  "firebase": "google-fb-translate",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    ".*",
+    "**/node_modules/**"
+  ]
+}
