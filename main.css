@@ -12,6 +12,10 @@ body {
   font-family: 'Gotham Light';
 }
 
+#languages {
+  display: hidden;
+}
+
 #chat {
   margin-top: 20px;
 }

@@ -2,6 +2,7 @@ var ref = new Firebase("https://google-fb-translate.firebaseio.com/");
 var usersRef = ref.child("users");
 var messagesRef = ref.child("messages");
 var user = null;
+$('#languages').hide();
 
 //Auth
 $('#google').on('click', function (e) {
@@ -26,6 +27,7 @@ ref.onAuth(function (authData) {
     usersRef.child(user.id).child('language_pref').child('lang_code').once('value', function (snap) {
       $('#' + snap.val()).addClass('selected-lang');
     });
+    $('#languages').show();
   }
 });
 
@@ -71,7 +73,7 @@ $('#sourceText').on('keypress', function (e) {
       var langCode = localStorage.getItem('langCode');
 
       if (langCode !== 'en') {
-        var source = 'https://www.googleapis.com/language/translate/v2?key=AIzaSyCe7PGjTlO5cM-upDqti3FfSC14GHjOiBU&source=en&target=' + langCode + '&callback=translateText&q=' + sourceText;
+        var source = 'https://www.googleapis.com/language/translate/v2?key=YOUR-API-KEY&source=en&target=' + langCode + '&callback=translateText&q=' + sourceText;
         newScript.src = source;
         document.getElementsByTagName('head')[0].appendChild(newScript);
       } else {
